@@ -1,5 +1,7 @@
 package ex01start;
 
+import java.util.HashSet;
+
 class noName{
 	int var;
 	static int static_var;
@@ -8,10 +10,10 @@ public class test extends noName {
 
 	public static void main(String[] args) {
 		
-		int a;
-//		System.out.println(a); // 에러
+		HashSet<String> hashSet = new HashSet<>();
 		
-		System.out.println(static_var); // 0으로 자동 초기화
-//		System.out.println(var); // 에러
+		hashSet.add("34535");
+		hashSet.add("34532");
+		System.out.println(hashSet);
 	}
 }
